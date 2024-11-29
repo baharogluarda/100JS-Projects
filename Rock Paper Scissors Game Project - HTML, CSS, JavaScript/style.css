@@ -1,0 +1,67 @@
+body {
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+/* header */
+h1 {
+  padding-top: 100px;
+}
+
+/* div */
+div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* buttons */
+button {
+  width: 90px;
+  height: 90px;
+  font-size: 45px;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+button#rock {
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+}
+
+button#paper {
+  border: none;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+button#scissors {
+  border: none;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* Status */
+#result {
+    font-size: 22px;
+}
+
+/* footer */
+#scoreBoard {
+  font-size: 24px;
+}
+
+span#myScore {
+  color: blue;
+}
+
+span#pcScore {
+  color: red;
+}
