@@ -1,0 +1,112 @@
+body {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+
+.section-center {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+div.tabs {
+  background: #8a8a8a;
+  border-radius: 1rem;
+}
+
+div.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.tabs-content {
+  padding: 10px;
+}
+
+div.content {
+  display: none;
+  color: whitesmoke;
+}
+
+div.content h3 {
+  color: black;
+  font-size: 24px;
+}
+
+div.active {
+  display: block;
+}
+
+/* Buttons */
+button {
+  background: #acacac;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 16px;
+  letter-spacing: 0.25rem;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+.button:nth-child(1) {
+  border-top-left-radius: 1rem;
+}
+
+.button:nth-child(3) {
+  border-top-right-radius: 1rem;
+}
+
+.button:hover:not(.active) {
+  background: #646464;
+  color: white;
+}
+
+button.active {
+  background: #8a8a8a;
+}
+
+.image {
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  div.tabs-content {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-center {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  img {
+    height: 30rem;
+  }
+}
